@@ -26,7 +26,6 @@ with(PowerData, {
     lines(DTs,Global_active_power)
 })
 
-
 with(PowerData, {
     plot(DTs,Voltage ,xlab="datetime",ylab="Voltage",type="n")
     lines(DTs,Voltage)
@@ -39,7 +38,6 @@ with(PowerData, {
     lines(DTs,Sub_metering_3,col="blue")
 })
 legend("topright",bty="n",lty=1, col = c("black","red", "blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
-
 
 with(PowerData, {
     plot(DTs,Global_reactive_power ,xlab="datetime",ylab="Global_reactive_power",type="n")
