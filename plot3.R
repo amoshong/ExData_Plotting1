@@ -14,7 +14,6 @@ rm(tmp,tmpColNames,FirstDT,SkipNum,RowNum)
 #convert date time 
 PowerData<-mutate(PowerData,DTs=as.POSIXct(strptime(paste(Date ,Time,sep=" "),"%d/%m/%Y %H:%M:%S")))
 
-
 # chinese os to english LC_Time
 Sys.setlocale("LC_TIME", "English")
 
